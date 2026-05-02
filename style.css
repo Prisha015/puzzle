@@ -1,8 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
   text-align: center;
+  font-family: Arial;
   background: #fffafc;
-  padding: 20px;
 }
 
 #puzzle {
@@ -19,11 +18,11 @@ body {
   height: 100px;
   background-image: url('image.jpg');
   background-size: 300px 300px;
+  border: 1px solid #ccc;
   cursor: pointer;
-  border: 1px solid #ddd;
 }
 
-button {
+#submitBtn {
   padding: 10px 20px;
   font-size: 16px;
   background: #e91e63;
@@ -33,17 +32,9 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background: #d81b60;
-}
-
-.hidden {
-  display: none;
-}
-
 #message {
+  display: none;   /* IMPORTANT */
   margin-top: 20px;
-  font-size: 16px;
   color: #e91e63;
   max-width: 500px;
   margin-left: auto;
