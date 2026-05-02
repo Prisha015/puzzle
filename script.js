@@ -48,8 +48,12 @@ function swapTiles(a, b) {
 function checkWin() {
   let correct = true;
 
-  tiles.forEach(tile => {
-    if (tile.style.backgroundPosition !== tile.dataset.correct) {
+  tiles.forEach((tile, i) => {
+    const x = i % size;
+    const y = Math.floor(i / size);
+    const correctPos = `-${x * 100}px -${y * 100}px`;
+
+    if (tile.style.backgroundPosition !== correctPos) {
       correct = false;
     }
   });
