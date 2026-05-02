@@ -23,6 +23,20 @@ body {
   border: 1px solid #ddd;
 }
 
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d81b60;
+}
+
 .hidden {
   display: none;
 }
