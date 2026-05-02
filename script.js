@@ -45,20 +45,10 @@ function swapTiles(a, b) {
 }
 
 // Check win
-function checkWin() {
-  let correct = true;
+const submitBtn = document.getElementById("submitBtn");
 
-  tiles.forEach((tile, i) => {
-    const x = i % size;
-    const y = Math.floor(i / size);
-    const correctPos = `-${x * 100}px -${y * 100}px`;
-
-    if (tile.style.backgroundPosition !== correctPos) {
-      correct = false;
-    }
-  });
-
-  if (correct) {
-    document.getElementById("message").classList.remove("hidden");
+submitBtn.addEventListener("click", () => {
+  document.getElementById("message").classList.remove("hidden");
+});
   }
 }
